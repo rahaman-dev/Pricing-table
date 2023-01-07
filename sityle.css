@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.rrr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f2 {
+  width: 500px;
+  margin: auto;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #00aaff;
+  border-radius: 3px;
+  text-align: center;
+}
+.checkbtn {
+  cursor: pointer;
+}
+#check {
+  display: none;
+}
+/* ================= */
+#check:checked ~ .first {
+  display: block;
+  display: flex;
+
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.first {
+  width: 100%;
+  display: flex;
+  margin: 3px;
+  display: none;
+  background-color: #f4f4f4;
+}
+/* ================= */
+.fist__line {
+  border: 1px solid #1a73e8;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 3px;
+  box-shadow: 3px -3px 24px -6px rgba(190, 190, 190, 0.75);
+  -webkit-box-shadow: 3px -3px 24px -6px rgba(185, 185, 185, 0.75);
+  -moz-box-shadow: 3px -3px 24px -6px rgba(182, 182, 182, 0.75);
+}
+.fist__line:first-child {
+  width: 40%;
+}
+.seo {
+  border: 1px solid #1a73e8;
+  border-radius: 5px;
+  margin-bottom: 70px;
+  box-shadow: 3px -3px 24px -6px rgba(187, 187, 187, 0.75);
+  -webkit-box-shadow: 3px -3px 24px -6px rgba(196, 196, 196, 0.75);
+  -moz-box-shadow: 3px -3px 24px -6px rgba(175, 175, 175, 0.75);
+}
+.seo__pak__heading {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #fff;
+  background-color: #00aaff;
+  margin: 30px 10px;
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+}
+.seo__pak__heading2 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #00aaff;
+  margin: 30px 10px;
+  border-radius: 3px;
+  padding: 5px;
+  text-align: center;
+}
+.seo__pack__para {
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-align: center;
+  color: #000;
+  line-height: 20px;
+  margin: 20px;
+}
+.seo_pack__price {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #414141;
+  margin-bottom: 20px;
+}
+.seo__pak__per {
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #414141;
+  margin-bottom: 20px;
+}
+
+/* ==================================second--section=========================================== */
+.second__section__heading {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: fff;
+  background-color: #1a73e8;
+  text-align: center;
+  border-radius: 3px;
+  margin-top: 20px;
+  padding: 3px;
+  display: flex;
+  margin-bottom: 8px;
+  font-weight: bolder;
+}
+
+.second__section__para {
+  font-size: 17px;
+  font-family: sans-serif;
+  font-weight: 500;
+  border-bottom: 1px solid gray;
+  padding: 5px;
+  color: #000;
+}
+.second__section__para__2 {
+  font-size: 17px;
+  font-family: sans-serif;
+  font: 500px;
+  border-bottom: 1px solid gray;
+  padding: 5px;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+}
+.fa-check {
+  color: #4ea36a;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+.buy__btn {
+  background-color: #00aaff;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: sans-serif;
+  border-radius: 3px;
+  text-align: center;
+}
+.buy__btn:hover {
+  background-color: #152b3c;
+  transition: 0.5s;
+}
+.btn a {
+  color: #fff;
+  text-align: center;
+}
+.btn a:hover {
+  color: #fff;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1200px) {
+  .f2 {
+    width: 250px;
+    height: 100px;
+    margin: auto;
+    padding: 0 10px;
+    font-size: 20px;
+  }
+  .first {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .fist__line:first-child {
+    width: auto;
+  }
+  /* --------------------------------- */
+  #check:checked ~ .first {
+    display: block;
+  }
+}
